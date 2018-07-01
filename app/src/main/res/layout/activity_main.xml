@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/b1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="ASTRONOMY"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Which is the largest planet in our solar system?"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:id="@+id/question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="90dp">
+
+                    <RadioButton
+                        android:id="@+id/q1_ans1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Jupiter"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Earth"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Mars"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Mercury"
+
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Neil Armstong is the first person to set foot on the?"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/q2_ans2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:hint="Type the answer here"
+                    android:inputType="textCapWords"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="The fastest ever man-made object that travels 50 times faster than a speeding bullet is?"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Stardust"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Ferrari"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/q3_ans3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Juno"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Falcon 9"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Which star is called Earth's satellite?"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Alpha Centauri"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Polaris"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sirius"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/q4_ans4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Moon"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="What is the Equatorial Circumference of Earth?"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="50,070km"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/q5_ans5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="40,030km"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="91,788km"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="32,768km"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Who was the first woman to reach space"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Adda Hamziya"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/q6_ans6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Valentina Tereshkova"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Zayyanatu RS"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Ameerah RS"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Which star is at the center of our solar system "
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Moon"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Polaris"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Antares"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/q7_ans7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Sun"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="All of these are planets except,"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="60dp"
+                        android:text="Venus"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Mercury"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/q8_ans8A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Asteroid"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/q8_ans8B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Polaris"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Which planets have rings around them"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Earth"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/q9_ans9B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Saturn"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mercury"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/q9_ans9A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Neptune"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.5"
+                    android:background="#000000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Which is the coldest and smallest of all planets?"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/q10_ans10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:hint="Type the answer here"
+                    android:inputType="textCapWords"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="submit"
+                    android:text="SUBMIT"
+
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/displayResult">
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:alpha="0.5"
+                    android:background="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SCORE SHEET"
+                        android:textColor="#B71C1C"
+                        android:textSize="30sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/resultRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Score:"
+                        android:textSize="30sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/resultInPercentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="30sp" />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="60dp"
+                    android:height="20dp"
+                    android:onClick="reset"
+                    android:text="RESET" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
